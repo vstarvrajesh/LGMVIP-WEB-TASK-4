@@ -1,38 +1,78 @@
 .App {
-  text-align: center;
+    max-width: 770px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    width: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App form {
+    background-color: #ccc;
+    width: 50%;
+    padding: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.form-data {
+    background-color: #e1e1e1;
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App h1 {
+    text-align: center;
+    margin-bottom: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+form {
+    display: grid;
+    gap: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+    font-weight: bold;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+    width: 90%;
+    margin: 6px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button[type='submit'] {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.submitted-data {
+    background-color: #f9f9f9;
+    border: 2px solid #171414;
+    border-radius: 4px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.submitted-data h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.submitted-data p {
+    margin: 5px 0;
+    font-weight: bold;
 }
